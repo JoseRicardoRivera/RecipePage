@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+main{
+    width: 75%;
+    margin: 0 auto;
+}
+h1{
+    width: 100%;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.receta-hero{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+}
+.linea{
+    width: 10%;
+    margin: 0 10px 0 0;
+    
+}
+.parrafo{
+    width: 85%;
+    font-size: 14px;
+    font-family: Arial;
+    color: #4F4F4F;
+}
+.circle{
+    align-self: flex-start;
+    margin-top: 2px;
+    width: 15px;
+}
+.pastel{
+    width: 969px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+.ingredientes{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ingredientesContenido{
+    width: 50%;
+}
+.recipeAside{
+    width: 30%;
+}
+.tituloIngredients{
+    font-size: 24px;
+    color: #333333;
+}
+.subtitleIngredient{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    margin: 30px 0;
+}
+.checkRecipe{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 25px;
+    margin-bottom: 3px;
+}
+.recipeAside{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+    height: 400px;
+    margin-right: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 2px rgba(0,0,0, 0.12);
+}
+.recipeYields{
+    margin: 20px 0;
+}
+.subtitleAside{
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contentAside{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.icono{
+    position: relative;
+    right: 30px;
+    top: 28px;
+    font-size: 1.5rem;
+}
+.iconoColor{
+    color: #F2994A;
+}
+.intructions{
+    width: 60%;
+}
+.instructionsFlex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.buttonNumber{
+    font-size: 16px;
+    background-color: #F2994A;
+    color: #fff;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+.parrafoIntructions{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    line-height: 1.5em;
+}
+h4{
+    margin: 50px 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #BDBDBD;
+}
+h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #A9A9A9;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 550px) {
+    main{
+        width: 90%;
+    }
+    
+    .receta-hero{
+        width: 100%;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .parrafo{
+        width: 90%;
+    }
+    .pastel{
+        width: 28rem;
+    }
+    .recipeAside{
+        order: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 150px;
+        margin: 0 0 20px 0;
+        padding: 0 40px 20px;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+    .recipeYields:first-child{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .recipeYields:nth-child(2), .recipeYields:nth-child(3), .recipeYields:nth-child(4){
+        width:33.333333%;
+    }
+    .ingredientesContenido{
+        order: 2;
+        width: 100%;
+    }
+    .intructions{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .pastel{
+        width: 90vw;
+    }
+}
